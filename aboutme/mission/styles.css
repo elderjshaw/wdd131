@@ -1,0 +1,14 @@
+body {
+    font-size: 20px;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+    background-color:aqua;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+p {
+    text-align: left;
+}
