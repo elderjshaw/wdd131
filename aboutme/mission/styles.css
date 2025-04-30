@@ -1,7 +1,8 @@
 body {
     border: 1px solid black;
-    padding: 100px;
-    margin: 300px;
+    padding: 30px 100px;
+    /*margin: 300px;*/
+    margin: 20px 300px;
     box-sizing: border-box;
     font-size: 20px;
     font-family: "Times New Roman", Times, serif;
@@ -25,7 +26,7 @@ h2::after {
     right: 10%;
     bottom: -5px;
     height: 1px;
-    background: linear-gradient(black);
+    background: linear-gradient(grey);
 }
 
 h1, h2 {
@@ -38,12 +39,22 @@ h1, h2, h3 {
 p {
     text-align: left;
     line-height: 30px;
-    margin-top: 60px; /*space between motiff line*/
+    margin-top: 20px; /*space between motiff line*/
 }
 
-#does-list {
+.does-list {
     margin-top: 10px;
+    margin-left: 50px;
     padding: 0;
+}
+
+.content {
+    padding-top: 0px;
+}
+
+li {
+    padding: 10px 0;
+
 }
 
 .container {
@@ -62,4 +73,8 @@ img {
     margin-top: 50px;
     margin-bottom: 20px;
     display: block;
+}
+
+main {   
+    padding: 0 70px;
 }
