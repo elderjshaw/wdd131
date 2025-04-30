@@ -1,14 +1,65 @@
 body {
+    border: 1px solid black;
+    padding: 100px;
+    margin: 300px;
+    box-sizing: border-box;
     font-size: 20px;
     font-family: "Times New Roman", Times, serif;
-    text-align: center;
-    background-color:aqua;
 }
 
+h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+
+}
+h2 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #006EB6;
+    position: relative;
+}
+h2::after {
+    content: '';
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: -5px;
+    height: 1px;
+    background: linear-gradient(black);
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
 h1, h2, h3 {
     text-align: center;
 }
 
 p {
     text-align: left;
+    line-height: 30px;
+    margin-top: 60px; /*space between motiff line*/
+}
+
+#does-list {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.text-container {
+    text-align: center;
+}
+
+img {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: block;
 }
