@@ -1,7 +1,6 @@
 body {
     border: 1px solid black;
     padding: 30px 100px;
-    /*margin: 300px;*/
     margin: 20px 300px;
     box-sizing: border-box;
     font-size: 20px;
@@ -34,6 +33,24 @@ h1, h2 {
 }
 h1, h2, h3 {
     text-align: center;
+}
+
+.dark {       /*Dark theme*/
+    background-color: #333;
+    color: #fff;
+}
+
+.dark h2{
+    color: #00a4e4;
+}
+
+.dark p {
+    color:#fffefe;
+}
+
+.dark h1,
+.dark p {
+    color: #ddd;
 }
 
 p {
