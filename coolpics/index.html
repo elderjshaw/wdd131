@@ -2,24 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Joshua Moncada">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cool Pics 📷</title>
     <link rel="stylesheet" href="coolpics.css"> 
+    <script src="coolpics.js" defer></script> 
 </head>
 <body>
    
     
     <header>
         <h1>Cool Pics 📷</h1>
-        <button class="menu-button">Menu</button>
-    <nav class="menu hide">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="people.html">People</a></li>
-            <li><a href="places.html">Places</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <button id="menuButton">Menu</button>
+        <nav>
+            <ul id="dropdown" class="hide">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
     </nav>
     </header>
     
@@ -28,39 +30,39 @@
         <h2>Current Work</h2> 
         <section class="gallery"> 
             <figure>
-                <img src="norris-sm.jpeg" alt="Placeholder 1">
+                <img src="images/norris-sm.jpeg" alt="Placeholder 1">
                 <figcaption>Image 1</figcaption>
             </figure>
             <figure>
-                <img src="norris-sm.jpeg" alt="Placeholder 2">
+                <img src="images/norris-sm.jpeg" alt="Placeholder 2">
                 <figcaption>Image 2</figcaption>
             </figure>
             <figure>
-                <img src="norris-sm.jpeg" alt="Placeholder 3">
+                <img src="images/norris-sm.jpeg" alt="Placeholder 3">
                 <figcaption>Image 3</figcaption>
             </figure>
             <figure>
-                <img src="norris-sm.jpeg" alt="Placeholder 4">
+                <img src="images/norris-sm.jpeg" alt="Placeholder 4">
                 <figcaption>Image 4</figcaption>
             </figure>
             <figure>
-                <img src="norris-sm.jpeg" alt="Placeholder 5">
+                <img src="images/norris-sm.jpeg" alt="Placeholder 5">
                 <figcaption>Image 5</figcaption>
             </figure>
             <figure>
-                <img src="norris-sm.jpeg" alt="Placeholder 6">
+                <img src="images/norris-sm.jpeg" alt="Placeholder 6">
                 <figcaption>Image 6</figcaption>
             </figure>
             <figure>
-                <img src="norris-sm.jpeg" alt="Placeholder 7">
+                <img src="images/norris-sm.jpeg" alt="Placeholder 7">
                 <figcaption>Image 7</figcaption>
             </figure>
             <figure>
-                <img src="norris-sm.jpeg" alt="Placeholder 8">
+                <img src="images/norris-sm.jpeg" alt="Placeholder 8">
                 <figcaption>Image 8</figcaption>
             </figure>
             <figure>
-                <img src="norris-sm.jpeg" alt="Placeholder 9">
+                <img src="images/norris-sm.jpeg" alt="Placeholder 9">
                 <figcaption>Image 9</figcaption>
             </figure>
         </section>
@@ -69,6 +71,5 @@
         <p>©2023 Not a real site 😀.</p>
     </footer>
     
-    <script src="coolpics.js" defer></script> 
 </body>
 </html>
