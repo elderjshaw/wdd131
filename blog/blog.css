@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root{
+    --primary-color: #C1D7CA;
+    --secondary-color: #AF1B3F;
+    --dark-color: #473144;
+    --header-font: "Sansita", sans-serif;
+    --primary-font: "Lato", Arial;
+}
+
+html {
+    width: 100%;
+
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: white;
+    color: var(--dark-color);
+}
+
+h1 {
+    font-family: var(--header-font);
+    font-size: 3em;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+h3 {
+    color: var(--secondary-color);
+    font-size: 25px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    border-top: 3px solid #EFC69B;
+    border-bottom: 3px solid #EFC69B;
+    padding: 10px;
+}
+
+.filter {
+    border: 3px solid #EFC69B;
+    grid-column: 2/3;
+    height: 1000%;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    justify-self: end;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+}
+
+.main-nav a {
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--secondary-color);
+}
+
+.about {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.archive {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.search {
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1em;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    font-size: 1em;
+    grid-column: 1/2;
+    margin-top: -50px;
+}
+
+.text {
+    grid-column: 1/2;
+    text-align: right;
+    border-right: 1px solid #EFC69B;
+    padding: 10px;
+    padding-left: 100px;
+}
+
+.book {
+    grid-column: 2/3;
+}
+
+img {
+    display: block;
+    margin: 50px;
+}
