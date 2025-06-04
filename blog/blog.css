@@ -18,26 +18,27 @@ body {
     font-family: var(--primary-font);
     background-color: white;
     color: var(--dark-color);
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-family: var(--header-font);
-    font-size: 3em;
-    font-weight: normal;
+    font-size: 3rem;
     text-align: center;
     margin: 0;
     padding-top: 20px;
     padding-bottom: 30px;
+    grid-column: 1 / 2; 
+}
+
+h2 {
+    color: var(--secondary-color);
 }
 
 h3 {
     color: var(--secondary-color);
     font-size: 25px;
-}
-
-main {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
 }
 
 .header-container {
@@ -54,9 +55,14 @@ main {
 .filter {
     border: 3px solid #EFC69B;
     grid-column: 2/3;
-    height: 1000%;
     margin-top: 40px;
     margin-right: 40px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
 }
 
 .main-nav {
@@ -72,6 +78,22 @@ main {
     text-decoration: none;
     font-size: 1em;
     color: var(--secondary-color);
+}
+
+article {
+    margin: 20px;
+    padding: 20px;
+}
+
+article img {
+    max-width: 200px;
+    margin: 10px auto;
+    display: block;
+}
+
+#articles-container {
+    grid-column: 1/2;
+    display: grid;
 }
 
 .about {
@@ -94,25 +116,55 @@ main {
 
 .container {
     display: grid;
+    grid-template-columns: 1fr 4fr;
     gap: 20px;
     font-size: 1em;
     grid-column: 1/2;
-    margin-top: -50px;
+    margin-top: 10px;
+}
+
+.content {
+    grid-column: 2/3;
 }
 
 .text {
     grid-column: 1/2;
-    text-align: right;
+    text-align: left;
     border-right: 1px solid #EFC69B;
     padding: 10px;
-    padding-left: 100px;
-}
-
-.book {
-    grid-column: 2/3;
 }
 
 img {
-    display: block;
-    margin: 50px;
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.post-meta {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1rem;
+}
+
+.post-meta p {
+    margin: 5px 0;
+}
+
+.post-content {
+    margin: 20px;
+    text-align: center;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px; 
+    left: 0;
+    background: #444;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+  
+.skip-link:focus {
+    top: 10px; 
 }
