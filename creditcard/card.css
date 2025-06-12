@@ -1,0 +1,105 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto 1fr 1fr 1fr 1fr;
+}
+
+.card-front {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    background-color: lightgray;
+    border-radius: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    padding: 2rem;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+    transform: translate(-10px, 50px);
+}
+
+.card-back {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 30px;
+    gap: 25px;
+    background-color: lightgrey;
+    box-shadow: 4px 4px 12px rgba(0,0,0,0.2);
+}
+.card {
+    border-radius: 8px;
+    max-width: 500px;
+}
+
+.cost {
+    grid-column: 1 / 3;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 1;
+    display: flex;
+}
+
+.card-number {
+    display: flex;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    flex-direction: column;
+}
+
+.card-holder {
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    display: flex;
+}
+
+.expiration {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    gap: 2px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.expiration-month {
+    grid-column: 1 / 2;
+}
+
+.expiration-year {
+    grid-column: 2 / 3;
+}
+
+.expiration input {
+    max-width: 40px;
+    padding: 4px;
+}
+
+.cvc-cvv {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.bar {
+    background-color: black;
+    height: 40px;
+    width: 100%;
+    grid-column: 1 / 3;
+}
+
+.cvc-cvv input {
+    margin-top: 6px;
+    max-width: 60px;
+
+}
+
+.submit {
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: left;
+    background-color: lightgray;
+    border-radius: 4px;
+    cursor: pointer;
+    color: black;
+    border: none;
+}
