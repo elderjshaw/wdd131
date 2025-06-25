@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Joshua Moncada">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <link href="styles.css" rel="stylesheet">
+    <script src="recipes.js" defer type="module"></script>
+    <meta property="og:title" content="Recipes">
+    <meta property="og:type" content="Recipes website" />
+    <meta property="og:description" content="Recipe Site.">
+    <meta property="og:image" content="images/recipe-book.png">
+    <meta property="og:url" content="https://elderjshaw.github.io/wdd131/recipes/index.html">
+    <meta name="twitter:card" content="images/recipe-book.png">
+
+</head>
+
+<body>
+
+    <div id="content">
+    <header>
+        <div id="pageTitle">
+            <img src="images/recipe-book.png" alt="recipe icon">
+            <h1>RecipeBook</h1>
+        </div>
+        
+        <div id="search">
+            <input placeholder="Find a recipe">
+            <img src="images/search.svg" alt="search icon">
+        </div>
+
+    </header>
+
+    <main>
+        <div class="recipes">
+            <div class="recipeImage">
+                <img src="images/german-gooseberry-cake.jpg" alt="#">
+            </div>
+            <div class="recipeContent">
+                <button>Dessert</button>
+                <h2>Gooseberry cake with vanilla cream and crumble</h2>
+                <span
+	                class="rating"
+	                role="img"
+	                aria-label="Rating: 5 out of 5 stars"
+                >
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star">⭐</span>
+	                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+	                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                </span>
+
+                <p class="desc">This gooseberry cake with crumble is easy to follow, a bit tart and not too sweet. Made up of a cake base, filled with fresh gooseberries and vanilla cream and finished off with crumble that's flavored with vanilla. A must have recipe for gooseberry lovers!!</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+	        <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+	        <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+	        <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+	        <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+
+    </footer>
+    </div>
+</body>
+</html>
