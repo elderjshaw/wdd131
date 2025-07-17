@@ -31,6 +31,13 @@ h3 {
     padding: 10px;
 }
 
+h4 {
+    font-family: var(--secondary-color);
+    max-width: 0%;
+    padding-left: 10%;
+    border-radius: 1pxS;
+}
+
 #button {
     max-width: auto;
     border: 1em black;
